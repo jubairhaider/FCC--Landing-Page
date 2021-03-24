@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: transparent;
+  opacity: 1;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  transition: top 0.3s;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.logo-title h1 {
+  font-family: Serif;
+}
+#header-img {
+  width: 4rem;
+  height: 3rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-right: 1rem;
+}
+
+.list-item {
+  padding: 0.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+
+.title {
+  background-image: url(https://image.freepik.com/free-photo/blur-ukulele-with-christmas-hat_1357-276.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.title-text {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 35%;
+}
+
+#main-title {
+  font-size: 3.5rem;
+}
+
+.title-text h4 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.video-section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin: auto;
+}
+.video-text {
+  margin: 1.5rem 0;
+}
+.video-text h1 {
+  font-size: 2.5rem;
+}
+
+.video-text p {
+  font-size: 1.2rem;
+}
+
+.video-section iframe {
+  margin: auto;
+  width: 90%;
+  height: 35rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form label {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+#email {
+  display: inline-block;
+  width: 40%;
+  margin: auto;
+  height: 2rem;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 1rem;
+}
+
+#email:focus {
+  outline: none;
+}
+
+#email::placeholder {
+  font-size: 1rem;
+}
+
+#submit {
+  display: inline-block;
+  width: 40%;
+  height: 2rem;
+  margin: 1rem auto;
+  background-color: rgb(66, 130, 248);
+  color: white;
+  border: 2px solid rgb(66, 130, 248);
+  border-radius: 3px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: transparent;
+  color: rgb(0, 86, 245);
+}
+
+.features-section {
+  width: 80%;
+  margin: auto;
+}
+
+.features-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.features-text h3 {
+  font-size: 2rem;
+}
+
+.features-text p {
+  font-size: 1rem;
+}
+
+.features {
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem 0;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.feature-text {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-text h4 {
+  font-size: 1.25rem;
+}
+
+.feature-text p {
+  font-size: 1rem;
+}
+
+.product-section {
+  width: 80%;
+  margin: auto;
+}
+
+.products-text h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.product {
+  border: 2px solid rgb(66, 130, 248);
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  margin: 0 1rem;
+  background-color: rgb(66, 130, 248);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.product:hover {
+  background-color: transparent;
+  color: rgb(66, 130, 248);
+}
+
+#footer {
+  background-color: rgb(66, 130, 248);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 1.5rem;
+  color: white;
+}
+
+@media only screen and (max-width: 976px) {
+  .product {
+    margin: 0.25rem;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #main-title {
+    font-size: 3rem;
+  }
+
+  .title-text h4 {
+    font-size: 1.25rem;
+  }
+  .video-section iframe {
+    height: 20rem;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+
+  .product {
+    margin: 0.5rem auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    flex-direction: column;
+  }
+
+  .logo-title {
+    padding-left: 0;
+    padding-right: 2.5rem;
+    margin: 0 auto;
+  }
+}
